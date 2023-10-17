@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 interface LoginFrom {
   mail: string;
-  password: string;
+  password: string;//sss
 }
 
 export default function Home() {
