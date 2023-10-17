@@ -1,6 +1,12 @@
 import './globals.css'
+import '@/components/css/login.css'
+import '@/components/css/create.css'
+// import '@/components/css/tests.css'
+import 'react-toastify/dist/ReactToastify.css';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { ToastContainer } from 'react-toastify'
+import { CheckStatusTest } from '@/components/functions';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,9 +20,33 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <body>{children}</body>
+  </html>
+
   )
 }
+
+// import type { Metadata } from 'next'
+// import { Inter } from 'next/font/google'
+
+// const inter = Inter({ subsets: ['latin'] })
+
+
+
+// export default function RootLayout({
+//   children, // will be a page or nested layout
+// }: {
+//   children: React.ReactNode
+// }) {
+//   return (
+//     <section>
+//       {/* Include shared UI here e.g. a header or sidebar */}
+//       <nav></nav>
+ 
+//       {children}
+//     </section>
+//   )
+// }
